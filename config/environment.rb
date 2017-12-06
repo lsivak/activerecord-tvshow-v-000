@@ -1,7 +1,7 @@
 require "bundler/setup"
 require 'yaml'
 require 'active_record'
-
+require 'rake 10.4.2'
 
 Bundler.require
 
