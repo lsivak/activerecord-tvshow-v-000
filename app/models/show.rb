@@ -17,6 +17,7 @@ class Show < ActiveRecord::Base
     Show.sum("rating")
 end
 def popular_shows
-  Show.sum.where("rating > 5")
+  show = Show.where("rating > 5")
+  show.sum
 end
 end
