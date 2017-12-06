@@ -22,6 +22,6 @@ def self.popular_shows
 end
 
 def self.shows_by_alphabetical_order
-  show = Show.title
+  show = Show..find_by("title")
 end
 end
