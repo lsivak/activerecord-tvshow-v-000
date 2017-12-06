@@ -1,3 +1,4 @@
+'bundle exec'
 require "bundler/setup"
 require 'yaml'
 require 'active_record'
