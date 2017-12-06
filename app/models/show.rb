@@ -4,7 +4,8 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    Show.highest_rating
+    Show.highest_rating.title
+
   end
 
   def self.lowest_rating
