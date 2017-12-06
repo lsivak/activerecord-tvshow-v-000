@@ -22,6 +22,6 @@ def self.popular_shows
 end
 
 def self.shows_by_alphabetical_order
-  Show.all.order(:desc)
+  Show.find_by(:title).order(title: :desc)
 end
 end
