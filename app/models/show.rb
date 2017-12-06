@@ -16,8 +16,12 @@ class Show < ActiveRecord::Base
   def self.ratings_sum
     Show.sum("rating")
 end
-def popular_shows
-  Show.find_by(:rating > 5)
+def self.popular_shows
+  Show.where("rating > 5")
 
+end
+
+def self.shows_by_alphabetical_order
+  Show.all.order(:desc)
 end
 end
