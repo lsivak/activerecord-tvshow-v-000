@@ -14,4 +14,3 @@ the_cleveland_show = Show.create(:name => "The Cleveland Show", :day => "Monday"
 fear_the_walking_dead = Show.create(:name => "Fear the Walking Dead", :day => "Sunday", :network => "AMC", :rating => 3)
 
 end
-
