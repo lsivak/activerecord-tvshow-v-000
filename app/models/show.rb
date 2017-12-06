@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
     show = Show.new
     show.highest_rating
     show.title
-    
+
   end
 
   def self.lowest_rating
