@@ -15,5 +15,14 @@ fear_the_walking_dead = Show.create(:name => "Fear the Walking Dead", :day => "S
 
 
 
+def highest_rating
+  Show.maximum(:rating)
+end
+
 def most_popular_show
+end
+
+def lowest_rating
+  Show.minimum(:rating)
+end
 end
